@@ -6,7 +6,12 @@ head
 	meta(name="theme-color" content="#111111")
 
 	//-Фавикон
-	link(rel="shortcut icon", href="img/favicon.ico", type="image/x-icon")
+	link(rel="shortcut icon", href="img/favicon/favicon.ico", type="image/x-icon")
+	link(rel="icon" href="img/favicon/favicon.svg")
+		//- Для Apple
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/faciconApple.png">
+		//- Для Safari
+	link(rel="mask-icon" href="img/favicon/favicon.svg" color="#000000")
 
 	//-Предзагрузка шрифтов
 	link(rel="preload" href="fonts/SFUIDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin)

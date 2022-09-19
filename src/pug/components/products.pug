@@ -1,0 +1,60 @@
+section.products
+	.container
+		h2.section__title
+			span.section__title-span Вы ждали этого 
+			|	Все продукты новой линейки
+
+		.swiper.products__carousel
+			ul.swiper-wrapper
+				li.swiper-slide
+					arcitle.products__item
+						picture
+							source(srcset = "img/products/iPhone-14-PRO.avif", type="image/avif")
+							source(srcset = "img/products/iPhone-14-PRO.webp" type="image/webp")
+							img.products__item-img(src="img/products/iPhone-14-PRO.png" alt="Изображение iPhone-14-PRO" width="255" height="255")
+
+						h3.products__title Phone 14 PRO
+
+				li.swiper-slide
+					arcitle.products__item
+						picture
+							source(srcset = "img/products/iPhone-14.avif", type="image/avif")
+							source(srcset = "img/products/iPhone-14.webp" type="image/webp")
+							img.products__item-img(src="img/products/iPhone-14.png" alt="Изображение iPhone-14" width="255" height="255")
+
+						h3.products__title iPhone 14
+
+				li.swiper-slide
+					arcitle.products__item
+						picture
+							source(srcset = "img/products/AirPods-Pro.avif", type="image/avif")
+							source(srcset = "img/products/AirPods-Pro.webp" type="image/webp")
+							img.products__item-img(src="img/products/AirPods-Pro.png" alt="Изображение AirPods-Pro" width="255" height="255")
+
+						h3.products__title AirPods Pro
+
+				li.swiper-slide
+					arcitle.products__item
+						picture
+							source(srcset = "img/products/apple_watch_ultra.avif", type="image/avif")
+							source(srcset = "img/products/apple_watch_ultra.webp" type="image/webp")
+							img.products__item-img(src="img/products/apple_watch_ultra.png" alt="Изображение apple_watch_ultra" width="255" height="255")
+
+						h3.products__title Apple Watch Ultra
+
+				li.swiper-slide
+					arcitle.products__item
+						picture
+							source(srcset = "img/products/apple-watch-series-8.avif", type="image/avif")
+							source(srcset = "img/products/apple-watch-series-8.webp" type="image/webp")
+							img.products__item-img(src="img/products/apple-watch-series-8.png" alt="Изображение apple-watch-series-8" width="255" height="255")
+
+						h3.products__title Apple Watch Series 8
+
+			button.products__arrow.products__arrow_left
+				svg.products__icon.products__icon_left
+					use(xlink:href="./img/sprite.svg#arrow")
+
+			button.products__arrow.products__arrow_right
+				svg.products__icon.products__icon_right
+					use(xlink:href="/img/sprite.svg#arrow")

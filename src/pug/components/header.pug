@@ -1,3 +1,20 @@
 header.header
   .container
-    p Хедер
+    .header__wrapper
+      a(href="/")
+        img(src="img/header/logo.svg", alt="Логотип proApple", width="116")
+
+      nav.navigation.js-navigation
+        ul.navigation__list
+          li.navigation__item
+            a.navigation__link.js-navigation__link(href="#") Продукты
+          li.navigation__item
+            a.navigation__link.js-navigation__link(href="#") Характеристика
+          li.navigation__item
+            a.navigation__link.js-navigation__link(href="#") Третье
+          li.navigation__item
+            a.navigation__link.js-navigation__link(href="#") Четвёртое
+
+
+      button.burger.js-burger(aria-label="Открыть меню", aria-expanded="false")
+        span.burger__line

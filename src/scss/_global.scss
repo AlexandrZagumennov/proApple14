@@ -20,9 +20,6 @@ body {
 	letter-spacing: normal;
 	background-color: $main-bg-color;
 	color: $main-color;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 }
 
 img, svg {
@@ -79,4 +76,37 @@ iframe {
   margin: 0 auto;
   padding: 0 $container-offset;
   max-width: $container-width;
+}
+
+.section {
+	&__title {
+		text-align: center;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 48px;
+		margin-bottom: 40px;
+
+		@include tablet {
+			font-size: 30px;
+			line-height: 38px;
+			margin-bottom: 20px;
+		}
+
+		@include small-tablet {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+	&__title-span {
+		display: block;
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 8px;
+
+		@include small-tablet {
+			font-size: 16px;
+			line-height: 18px;
+			margin-bottom: 10px;
+		}
+	}
 }

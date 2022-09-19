@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#111111">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/faciconApple.png">
+    <link rel="mask-icon" href="img/favicon/favicon.svg" color="#000000">
     <link rel="preload" href="fonts/SFUIDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/SFUIDisplay-Light.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/SFUIDisplay-Semibold.woff2" as="font" type="font/woff2" crossorigin>
@@ -19,19 +22,98 @@
 <body>
     <header class="header">
         <div class="container">
-            <p>Хедер</p>
+            <div class="header__wrapper"><a href="/"><img src="img/header/logo.svg" alt="Логотип proApple" width="116"></a>
+                <nav class="navigation js-navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a class="navigation__link js-navigation__link" href="#">Продукты</a></li>
+                        <li class="navigation__item"><a class="navigation__link js-navigation__link" href="#">Характеристика</a></li>
+                        <li class="navigation__item"><a class="navigation__link js-navigation__link" href="#">Третье</a></li>
+                        <li class="navigation__item"><a class="navigation__link js-navigation__link" href="#">Четвёртое</a></li>
+                    </ul>
+                </nav>
+                <button class="burger js-burger" aria-label="Открыть меню" aria-expanded="false"><span class="burger__line"></span></button>
+            </div>
         </div>
     </header>
     <main class="main">
-        <div class="container">
-            <div class="main__copyright"> Маин</div>
-        </div>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__bg"></div>
+                    <div class="hero__content">
+                        <h1 class="hero__title">iPhone 14</h1>
+                        <p class="hero__description">Скоро в продаже</p>
+                        <button class="hero__btn">Узнать больше</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <h2 class="section__title"><span class="section__title-span">Вы ждали этого </span> Все продукты новой линейки</h2>
+                <div class="swiper products__carousel">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <arcitle class="products__item">
+                                <picture>
+                                    <source srcset="img/products/iPhone-14-PRO.avif" type="image/avif">
+                                    <source srcset="img/products/iPhone-14-PRO.webp" type="image/webp"><img class="products__item-img" src="img/products/iPhone-14-PRO.png" alt="Изображение iPhone-14-PRO" width="255" height="255">
+                                </picture>
+                                <h3 class="products__title">Phone 14 PRO</h3>
+                            </arcitle>
+                        </li>
+                        <li class="swiper-slide">
+                            <arcitle class="products__item">
+                                <picture>
+                                    <source srcset="img/products/iPhone-14.avif" type="image/avif">
+                                    <source srcset="img/products/iPhone-14.webp" type="image/webp"><img class="products__item-img" src="img/products/iPhone-14.png" alt="Изображение iPhone-14" width="255" height="255">
+                                </picture>
+                                <h3 class="products__title">iPhone 14</h3>
+                            </arcitle>
+                        </li>
+                        <li class="swiper-slide">
+                            <arcitle class="products__item">
+                                <picture>
+                                    <source srcset="img/products/AirPods-Pro.avif" type="image/avif">
+                                    <source srcset="img/products/AirPods-Pro.webp" type="image/webp"><img class="products__item-img" src="img/products/AirPods-Pro.png" alt="Изображение AirPods-Pro" width="255" height="255">
+                                </picture>
+                                <h3 class="products__title">AirPods Pro</h3>
+                            </arcitle>
+                        </li>
+                        <li class="swiper-slide">
+                            <arcitle class="products__item">
+                                <picture>
+                                    <source srcset="img/products/apple_watch_ultra.avif" type="image/avif">
+                                    <source srcset="img/products/apple_watch_ultra.webp" type="image/webp"><img class="products__item-img" src="img/products/apple_watch_ultra.png" alt="Изображение apple_watch_ultra" width="255" height="255">
+                                </picture>
+                                <h3 class="products__title">Apple Watch Ultra</h3>
+                            </arcitle>
+                        </li>
+                        <li class="swiper-slide">
+                            <arcitle class="products__item">
+                                <picture>
+                                    <source srcset="img/products/apple-watch-series-8.avif" type="image/avif">
+                                    <source srcset="img/products/apple-watch-series-8.webp" type="image/webp"><img class="products__item-img" src="img/products/apple-watch-series-8.png" alt="Изображение apple-watch-series-8" width="255" height="255">
+                                </picture>
+                                <h3 class="products__title">Apple Watch Series 8</h3>
+                            </arcitle>
+                        </li>
+                    </ul>
+                    <button class="products__arrow products__arrow_left">
+                        <svg class="products__icon products__icon_left">
+                            <use xlink:href="./img/sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+                    <button class="products__arrow products__arrow_right">
+                        <svg class="products__icon products__icon_right">
+                            <use xlink:href="/img/sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="fooner__copyright"> Футер</div>
-        </div>
-    </footer>
+    <footer class="footer"></footer>
 </body>
 
 </html>

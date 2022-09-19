@@ -1,0 +1,89 @@
+.hero {
+	position: relative;
+	z-index: 1;
+
+	&__wrapper {
+		padding: 140px 0 160px;
+
+		@include mobile {
+			padding: 50px 0;
+		}
+	}
+
+	&__content {
+		animation: zoomIn 1s;
+		@include mobile {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 20px;
+		}
+	}
+
+	&__bg {
+    position: absolute;
+		top: 0;
+		left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+		@include bg-full('../img/hero/hero-bg');
+		@include image-set('../img/hero/hero-bg');
+
+		@include laptop {
+			background-size: cover;
+		}
+
+		@include small-tablet {
+			background-position-x: 70%;
+		}
+
+		@include small-tablet {
+			opacity: .3;
+		}
+	}
+
+	&__title {
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 40px;
+
+		@include mobile {
+			margin-bottom: 0;
+		}
+	}
+
+	&__description{
+		font-size: 40px;
+		line-height: 48px;
+		font-weight: 600;
+		margin-bottom: 40px;
+
+		@include mobile {
+			font-size: 32px;
+			margin-bottom: 0;
+		}
+	}
+
+
+	&__btn{
+		font-size: 16px;
+		line-height: 100%;
+		border: 1px solid #70A5D5;
+		border-radius: 32px;
+		background-color: transparent;
+		padding: 18px 20px;
+		transition: background-color .3s ease-in-out, color .3s ease-in-out;
+
+		&:hover {
+			background-color: #2238FF;
+			color: $color-white;
+		}
+	}
+}
+
+@keyframes zoomIn {
+	from {
+		transform: scale3d(0, 0, 0);
+	}
+}

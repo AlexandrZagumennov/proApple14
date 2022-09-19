@@ -1,19 +1,4 @@
-@mixin font-face($font-family, $url, $weight, $style) {
-  @font-face {
-    font-family: "#{$font-family}";
-    src: local(#{$font-family}), 
-		url('../fonts/#{$url}.woff2') format("woff2");
-    font-weight: #{$weight};
-    font-display: swap;
-    font-style: $style;
-  }
-}
-
-@mixin bg-full ($url) {
-	background: {
-		image: url($url);
-		size: contain;
-		position: center;
-		repeat: no-repeat;
-	};
-}
+@import 'mixins/burger';
+@import 'mixins/font-face';
+@import 'mixins/breakepoints';
+@import 'mixins/mini';

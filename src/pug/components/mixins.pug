@@ -1,0 +1,13 @@
+mixin svg(name)
+  svg
+    use(xlink:href=`/img/sprite.svg#${name}`)
+
+mixin picture
+	p WORK
+
+mixin pic(num)
+	h4= num
+
+mixin slider-card(title, url)
+	article.card
+		h3.card__title = title

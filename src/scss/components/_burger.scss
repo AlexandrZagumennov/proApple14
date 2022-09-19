@@ -1,0 +1,25 @@
+.burger { 
+	@include burger;
+	display: none;
+
+	@include small-tablet {
+		display: block;
+		position: absolute;
+		z-index: 3;
+		right: 5px;
+		top: 5px;
+		transition: color .3s ease-in-out;
+
+		&:hover{
+			color: $color-blue;
+		}
+
+		&_active{
+			color: $color-white;
+
+			&:hover{
+				color: $main-color;
+			}
+		}
+	}
+}
