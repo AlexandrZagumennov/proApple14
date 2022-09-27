@@ -1,0 +1,79 @@
+.acc {
+	padding: 70px 0;
+
+	@include tablet {
+		padding: 40px 0;
+	}
+}
+
+.acc__list {
+	max-width: 920px;
+	margin: 0 auto;
+}
+
+.acc__item {
+	margin-bottom: 10px;
+}
+
+.acc__title {
+	position: relative;
+	width: 100%;
+	padding: 12px 30px;
+	background-color: transparent;
+	text-align: left;
+	border: 1px solid;
+	border-color: $color-white-hover $color-white-hover transparent $color-white-hover;
+}
+
+.acc__title:after {
+	content: '';
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	width: 17px;
+	height: 17px;
+	border: 1px solid;
+	border-color: transparent #000 #000 transparent;
+	transform: rotate(45deg);
+	transition: border-color 0.2s ease-in-out, bottom 0.2s ease-in-out;
+}
+
+.acc__title.active:after {
+	border-color: rgb(27, 134, 0) transparent transparent rgb(27, 134, 0);
+	bottom: 5px;
+}
+
+.acc__description {
+	margin-top: -2px;
+	border: 1px solid;
+	border-color: transparent $color-white-hover  $color-white-hover  $color-white-hover ;
+	height: 0;
+	overflow: hidden;
+	transition: height .4s ease-in-out;
+	font-size: 12px;
+	line-height: 130%;
+}
+
+.acc__text {
+	margin: 0 30px;
+
+	&:last-child {
+		margin-bottom: 20px;
+	}
+}
+
+
+.acc__title:focus {
+	outline:none;
+}
+
+.js-acc__description {
+	height: 0;
+	overflow: hidden;
+	transition: height .3s ease-in-out;
+}
+
+.js-acc__description.active {
+	height: auto;
+}
+

@@ -23,12 +23,11 @@
     <header class="header">
         <div class="container">
             <div class="header__wrapper"><a href="/"><img src="img/header/logo.svg" alt="Логотип proApple" width="116"></a>
-                <nav class="navigation js-navigation">
+                <nav class="navigation js-navigation"><span class="navigation__line"></span>
                     <ul class="navigation__list">
-                        <li class="navigation__item"><a class="navigation__link js-navigation__link" href="#">Продукты</a></li>
-                        <li class="navigation__item"><a class="navigation__link js-navigation__link" href="#">Характеристика</a></li>
-                        <li class="navigation__item"><a class="navigation__link js-navigation__link" href="#">Третье</a></li>
-                        <li class="navigation__item"><a class="navigation__link js-navigation__link" href="#">Четвёртое</a></li>
+                        <li class="navigation__item"><a class="navigation__link js-navigation__link" href="#products">Продукты</a></li>
+                        <li class="navigation__item"><a class="navigation__link js-navigation__link" href="#characteristics">Характеристика</a></li>
+                        <li class="navigation__item"><a class="navigation__link js-navigation__link" href="#faq">Частые вопросы</a></li>
                     </ul>
                 </nav>
                 <button class="burger js-burger" aria-label="Открыть меню" aria-expanded="false"><span class="burger__line"></span></button>
@@ -48,7 +47,7 @@
                 </div>
             </div>
         </section>
-        <section class="products">
+        <section class="products" id="products">
             <div class="container">
                 <h2 class="section__title"><span class="section__title-span">Вы ждали этого </span> Все продукты новой линейки</h2>
                 <div class="swiper products__carousel">
@@ -112,7 +111,7 @@
                 </div>
             </div>
         </section>
-        <section class="characteristics">
+        <section class="characteristics" id="characteristics">
             <div class="container">
                 <h2 class="section__title"><span class="section__title-span">Мы становимся лучше. Для Вас</span> Характеристики</h2>
                 <div class="js-tabs characteristics__container">
@@ -173,6 +172,31 @@
                 </div>
             </div>
         </section>
+        <section class="acc" id="faq">
+            <div class="container">
+                <h2 class="section__title"><span class="section__title-span">Чем отличается от предыдущего</span> FAQ</h2>
+                <ul class="acc__list js-acc__list">
+                    <li class="acc__item js-acc__item">
+                        <button class="acc__title js-acc__title active" type="button">1. Корпус и габариты</button>
+                        <div class="acc__description js-acc-description active">
+                            <p class="acc__text">Новый iPhone 14 внешне практически не отличается от прошлогодней модели и имеет корпус с размерами 146,7 х 71,5 х 7,8 мм, при весе – 172 г.</p>
+                        </div>
+                    </li>
+                    <li class="acc__item js-acc__item">
+                        <button class="acc__title js-acc__title" type="button">2. Процессор и железо</button>
+                        <div class="acc__description js-acc-description">
+                            <p class="acc__text">Как и ожидалось, новый iPhone 14 получил прошлогодний процессор A15 Bionic. 6-ядерный чип имеет 4 энергоэффективных и 2 производительных ядра. На борту 5-ядер GPU и 16-ядерная система Neural Engine.</p>
+                        </div>
+                    </li>
+                    <li class="acc__item js-acc__item">
+                        <button class="acc__title js-acc__title" type="button">3. Камеры</button>
+                        <div class="acc__description js-acc-description">
+                            <p class="acc__text">iPhone 14 оснащается сдвоенным модулем основных камер. Это 12-мегапиксельные сверхширик ƒ/2.4 и ширик ƒ/1.5. Присутствует система Sensor-shift для оптической стабилизации изображения.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <div class="modal js-modal-1">
             <div class="modal__main">
                 <div class="modal__container">
@@ -193,7 +217,15 @@
             </div>
         </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper"><img src="img/header/logo.svg" alt="Логотип proApple" width="116">
+                <div class="footer__developer">
+                    <p class="footer__text">Вёрстка</p><a class="footer__link" href="https://vk.com/id31829061">Александр Загумённов</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <div class="overlay"></div>
 </body>
 
