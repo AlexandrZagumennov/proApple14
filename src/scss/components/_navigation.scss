@@ -44,26 +44,26 @@
     background-color: $color-blue;
     color: $color-white;
     position: absolute;
-    z-index: 2000;
-    top: 0;
-    right: -5px;
+    z-index: 402;
+    top: 20px;
+    right: 0;
   }
 
   @include mobile {
     min-width: 270px;
     max-width: 270px;
     padding: 20px 0;
-    top: 0;
-    right: 0;
   }
 }
 
 .js-navigation {
   @include small-tablet {
-    display: none;
+		transform: translateX(200%);
+		transition: transform 0.4s ease-in-out;
+		overflow-y: auto;
   }
 }
 
 .js-navigation_active {
-  display: block;
+	transform: none;
 }

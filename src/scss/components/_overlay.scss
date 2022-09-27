@@ -1,3 +1,4 @@
 .overlay {
 	@include overlay-style;
+	z-index: 401;
 }

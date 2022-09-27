@@ -72,6 +72,12 @@ iframe {
 	overflow: hidden;
 }
 
+.page {
+	&__body {
+		overflow-x: hidden;
+	}
+}
+
 .container {
   margin: 0 auto;
   padding: 0 $container-offset;

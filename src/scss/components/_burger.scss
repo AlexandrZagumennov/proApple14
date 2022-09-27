@@ -5,10 +5,11 @@
 	@include small-tablet {
 		display: block;
 		position: absolute;
-		z-index: 2000;
-		right: 5px;
-		top: 5px;
-		transition: color .3s ease-in-out;
+		z-index: 403;
+		right: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: color .4s ease-in-out;
 
 		&:hover{
 			color: $color-blue;

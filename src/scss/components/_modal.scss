@@ -1,6 +1,7 @@
 .modal {
   @include overlay-style;
 	padding: 20px;
+	z-index: 1000;
 }
 
 .modal__main{
