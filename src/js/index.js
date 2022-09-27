@@ -6,6 +6,7 @@ import { modalController } from './functions/modal.js';
 import { accController } from './functions/acc.js';
 import { magicLineController } from './functions/magicLine.js';
 import { smothScroll } from './functions/smoothScroll.js';
+import { backToTopController } from './functions/backToTop.js';
 
 burger();
 sliders();
@@ -51,5 +52,9 @@ smothScroll({
   pageTrigger: '.js-navigation',
   SPEED: 0.2,
 });
+
 // Скролл наверх
-// smothScroll(document.querySelector('#up'))
+// Класс указывается без точки, чтобы скрипт отработал корректно при работе с классами
+backToTopController({
+  goTopBtnTrigger: 'back-to-top',
+});

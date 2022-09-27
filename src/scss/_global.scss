@@ -116,3 +116,35 @@ iframe {
 		}
 	}
 }
+
+// Кнопка Наверх
+.back-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  z-index: 9999;
+  width: 100px;
+  height: 100px;
+	border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+	@include bg-full('../img/products/arrow.svg');
+	transform: rotate(90deg);
+	transition: transform .3s ease-in;
+
+	@include small-tablet {
+		width: 50px;
+		height: 50px;
+		bottom: 65px;
+		right: 20px;
+	}
+
+	&:hover {
+		transform: rotate(90deg) scale(.97);
+	}
+
+	&_show {
+		display: block;
+	}
+}
