@@ -5,6 +5,7 @@ import { ItcTabs } from './assets/tabs.js';
 import { modalController } from './functions/modal.js';
 import { accController } from './functions/acc.js';
 import { magicLineController } from './functions/magicLine.js';
+import { smothScroll } from './functions/smoothScroll.js';
 
 burger();
 sliders();
@@ -44,3 +45,11 @@ magicLineController({
   line: 'navigation__line',
   item: 'navigation__item',
 });
+
+// Плавный скролл
+smothScroll({
+  pageTrigger: '.js-navigation',
+  SPEED: 0.2,
+});
+// Скролл наверх
+// smothScroll(document.querySelector('#up'))
