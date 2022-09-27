@@ -1,0 +1,49 @@
+section.characteristics
+  .container
+    h2.section__title
+      span.section__title-span Мы становимся лучше. Для Вас
+      |	Характеристики
+
+    .js-tabs.characteristics__container
+      ul.characteristics__nav
+        li
+          button.js-tabs__btn.js-tabs__btn_active.characteristics__btn iPhone 14 PRO
+        li
+          button.js-tabs__btn.characteristics__btn iPhone 14
+
+      .tabs__content
+        .js-tabs__pane.js-tabs__pane_show
+          .characteristics__wrapper
+            picture
+              source(srcset = "img/products/iPhone-14-PRO.avif", type="image/avif")
+              source(srcset = "img/products/iPhone-14-PRO.webp" type="image/webp")
+              img.characteristics__img(src="img/products/iPhone-14-PRO .png" alt="Изображение iPhone 14 PRO" width="255" height="255")
+            .characteristics__details
+              .characteristics__param
+                p.characteristics__text вес
+                p.characteristics__text оперативная память
+                p.characteristics__text встроенная память
+                p.characteristics__text аккумулятор
+              .characteristics__values
+                p.characteristics__text 255 г
+                p.characteristics__text 6 гб
+                p.characteristics__text 128/256/512 гб
+                p.characteristics__text 4325 мАч
+
+        .js-tabs__pane
+          .characteristics__wrapper
+            picture
+              source(srcset = "img/products/iPhone-14.avif", type="image/avif")
+              source(srcset = "img/products/iPhone-14.webp" type="image/webp")
+              img.characteristics__img(src="img/products/iPhone-14 .png" alt="Изображение iPhone 14" width="255" height="255")
+            .characteristics__details
+              .characteristics__param
+                p.characteristics__text процессор
+                p.characteristics__text камера (основная)
+                p.characteristics__text камера (фронтальная)
+                p.characteristics__text дисплей
+              .characteristics__values
+                p.characteristics__text A16 Bionic
+                p.characteristics__text 48 Мп
+                p.characteristics__text 12 Мп
+                p.characteristics__text Full HD, 60/120 Гц

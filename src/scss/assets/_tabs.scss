@@ -1,0 +1,11 @@
+// Управление классами отображения табов
+.js-tabs{}
+.js-tabs__btn{}
+.js-tabs__btn_active{}
+
+.js-tabs__pane {
+	display: none;
+}
+.js-tabs__pane_show {
+	display: block;
+}

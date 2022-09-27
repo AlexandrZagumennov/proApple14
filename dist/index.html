@@ -43,7 +43,7 @@
                     <div class="hero__content">
                         <h1 class="hero__title">iPhone 14</h1>
                         <p class="hero__description">Скоро в продаже</p>
-                        <button class="hero__btn">Узнать больше</button>
+                        <button class="hero__btn js-btn-open-modal-1">Узнать больше</button>
                     </div>
                 </div>
             </div>
@@ -112,8 +112,89 @@
                 </div>
             </div>
         </section>
+        <section class="characteristics">
+            <div class="container">
+                <h2 class="section__title"><span class="section__title-span">Мы становимся лучше. Для Вас</span> Характеристики</h2>
+                <div class="js-tabs characteristics__container">
+                    <ul class="characteristics__nav">
+                        <li>
+                            <button class="js-tabs__btn js-tabs__btn_active characteristics__btn">iPhone 14 PRO</button>
+                        </li>
+                        <li>
+                            <button class="js-tabs__btn characteristics__btn">iPhone 14</button>
+                        </li>
+                    </ul>
+                    <div class="tabs__content">
+                        <div class="js-tabs__pane js-tabs__pane_show">
+                            <div class="characteristics__wrapper">
+                                <picture>
+                                    <source srcset="img/products/iPhone-14-PRO.avif" type="image/avif">
+                                    <source srcset="img/products/iPhone-14-PRO.webp" type="image/webp"><img class="characteristics__img" src="img/products/iPhone-14-PRO .png" alt="Изображение iPhone 14 PRO" width="255" height="255">
+                                </picture>
+                                <div class="characteristics__details">
+                                    <div class="characteristics__param">
+                                        <p class="characteristics__text">вес</p>
+                                        <p class="characteristics__text">оперативная память</p>
+                                        <p class="characteristics__text">встроенная память</p>
+                                        <p class="characteristics__text">аккумулятор</p>
+                                    </div>
+                                    <div class="characteristics__values">
+                                        <p class="characteristics__text">255 г</p>
+                                        <p class="characteristics__text">6 гб</p>
+                                        <p class="characteristics__text">128/256/512 гб</p>
+                                        <p class="characteristics__text">4325 мАч</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="js-tabs__pane">
+                            <div class="characteristics__wrapper">
+                                <picture>
+                                    <source srcset="img/products/iPhone-14.avif" type="image/avif">
+                                    <source srcset="img/products/iPhone-14.webp" type="image/webp"><img class="characteristics__img" src="img/products/iPhone-14 .png" alt="Изображение iPhone 14" width="255" height="255">
+                                </picture>
+                                <div class="characteristics__details">
+                                    <div class="characteristics__param">
+                                        <p class="characteristics__text">процессор</p>
+                                        <p class="characteristics__text">камера (основная)</p>
+                                        <p class="characteristics__text">камера (фронтальная)</p>
+                                        <p class="characteristics__text">дисплей</p>
+                                    </div>
+                                    <div class="characteristics__values">
+                                        <p class="characteristics__text">A16 Bionic</p>
+                                        <p class="characteristics__text">48 Мп</p>
+                                        <p class="characteristics__text">12 Мп</p>
+                                        <p class="characteristics__text">Full HD, 60/120 Гц</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal js-modal-1">
+            <div class="modal__main">
+                <div class="modal__container">
+                    <h3 class="callback__title">Узнай все о новом iPhone 14</h3>
+                    <form class="form" action="#">
+                        <div class="callback__wrapper">
+                            <label class="form__label callback__label">
+                                <input class="form__input callback__input" type="text" name="Имя" placeholder="Ваше имя">
+                            </label>
+                            <label class="form__label callback__label">
+                                <input class="form__input callback__input" type="tel" name="Телефон" placeholder="Телефон">
+                            </label>
+                            <button class="form__btn callback__btn">Заказать консультацию</button>
+                        </div>
+                    </form>
+                </div>
+                <button class="modal__close">&#10006;</button>
+            </div>
+        </div>
     </main>
     <footer class="footer"></footer>
+    <div class="overlay"></div>
 </body>
 
 </html>

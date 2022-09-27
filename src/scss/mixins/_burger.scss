@@ -10,7 +10,15 @@
   height: var(--burger-height);
   color: #000;
   background-color: transparent;
+	outline: 1px solid transparent;
+  outline-offset: 5px;
+  transition: outline-color .15s ease-in-out;
+  border-radius: 3px;
   cursor: pointer;
+
+	&:focus-visible {
+		outline-color: #000;
+	}
 
   &::before,
   &::after {
@@ -54,6 +62,10 @@
       transform: rotate(-45deg);
       transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
     }
+
+		&:focus-visible {
+			outline-color: #000;
+		}
 
     .burger__line {
       transform: scale(0);

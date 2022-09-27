@@ -7,9 +7,16 @@
 /*Подключение стилей плагинов */
 @import 'libs/swiper-bundle.min';
 
+/*Подключение вспомогатеьных стилей assets */
+@import 'assets/tabs';
+
 /* Подключение стилей блоков */
 @import 'components/header';
 @import 'components/burger';
 @import 'components/navigation';
 @import 'components/hero';
 @import 'components/products';
+@import 'components/characteristics';
+@import 'components/modal';
+@import 'components/callback';
+@import 'components/overlay';

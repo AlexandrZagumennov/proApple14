@@ -1,0 +1,89 @@
+.callback {
+	&__title {
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 48px;
+
+		margin-bottom: 48px;
+
+		@include small-tablet {
+			font-size: 26px;
+			line-height: 130%;
+			margin-bottom: 40px;
+		}
+
+		@include mobile {
+			text-align: center;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		gap: 22px;
+		align-items: center;
+
+		@include small-tablet {
+			max-width: 100%;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&__label {
+		@include small-tablet {
+			width: 100%;
+		}
+	}
+
+	&__input {
+		box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+		border-radius: 6px;
+		border-color: transparent;
+		outline-color: transparent;
+		padding: 15px 8px;
+		margin: 0;
+
+		transition: outline-color .3s ease-in;
+
+		&::placeholder {
+			font-size: 14px;
+			line-height: 17px;
+			color: #0a0a0a;
+		}
+
+		&:focus {
+			outline-color: $color-blue;
+		}
+
+		@include small-tablet {
+			width: 100%;
+		}
+	}
+
+	&__btn {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 19px;
+		padding: 14px 21px;
+		text-align: center;
+		color: $color-white;
+		background-color: $color-blue;
+		box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+		border-radius: 6px;
+		border: 1px solid transparent;
+
+		transition-property: color, background-color, border-color;
+		transition-duration: .3s;
+		transition-timing-function: ease-in-out;
+
+		&:hover {
+			color: $main-color;
+			background-color: $color-white;
+			border-color: $color-blue;
+		}
+
+		@include small-tablet {
+			width: 100%;
+		}
+	}
+}

@@ -10,7 +10,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-
   "homepage": "",
   "devDependencies": {
     "@babel/core": "^7.16.0",
@@ -40,5 +39,8 @@
     "sass": "^1.43.4",
     "webpack": "^5.61.0",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "graph-tabs": "^1.0.2"
   }
 }

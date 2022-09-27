@@ -1,0 +1,94 @@
+.characteristics {
+	padding: 70px 0;
+	position: relative;
+
+	@include tablet {
+		padding: 40px 0;
+	}
+
+	&__container{
+		max-width: 830px;
+		margin: 0 auto;
+
+		@include small-tablet {
+			max-width: 600px;
+		}
+
+		@include mobile {
+			max-width: 270px;
+		}
+	}
+
+	&__nav{
+		display: flex;
+		max-width: max-content;
+
+		@include mobile {
+			max-width: 270px;
+		}
+	}
+
+	&__btn {
+		font-size: 16px;
+		line-height: 130%;
+		padding: 20px 30px;
+		min-width: 150px;
+		border: transparent;
+		border-radius: 10px 10px 0 0;
+		background-color: transparent;
+		margin-top: -3px;
+
+		@include mobile {
+			font-size: 13px;
+			padding: 10px;
+			min-width: 100px;
+		}
+	}
+
+	&__btn.js-tabs__btn_active {
+		background-color: $color-white;
+		margin-top: 0;
+	}
+
+	&__wrapper {
+		background-color: $color-white;
+		display: flex;
+		align-items: center;
+		gap: 30px;
+
+		@include small-tablet {
+			gap: 10px;
+		}
+
+		@include mobile {
+			flex-direction: column;
+			align-items: center;
+			gap: 30px;
+		}
+	}
+
+	&__details {
+		display: flex;
+		gap: 60px;
+
+		@include small-tablet {
+			gap: 20px;
+		}
+
+		@include mobile {
+			width: 90%;
+			padding-bottom: 20px;
+		}
+	}
+
+	&__text{
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+
+		@include small-tablet {
+			font-size: 12px;
+			line-height: 130%;
+		}
+	}
+}

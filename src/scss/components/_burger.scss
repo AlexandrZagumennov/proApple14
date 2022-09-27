@@ -5,7 +5,7 @@
 	@include small-tablet {
 		display: block;
 		position: absolute;
-		z-index: 3;
+		z-index: 2000;
 		right: 5px;
 		top: 5px;
 		transition: color .3s ease-in-out;
