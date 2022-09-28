@@ -1,24 +1,25 @@
-@import 'var';
-@import 'mixins';
-@import 'normalize';
-@import 'global';
-@import 'fonts';
+@import "var";
+@import "mixins";
+@import "normalize";
+@import "global";
+@import "fonts";
 
 /*Подключение стилей плагинов */
-@import 'libs/swiper-bundle.min';
+@import "libs/swiper-bundle.min";
+@import "libs/aos";
 
 /*Подключение вспомогатеьных стилей assets */
-@import 'assets/tabs';
+@import "assets/tabs";
 
 /* Подключение стилей блоков */
-@import 'components/header';
-@import 'components/burger';
-@import 'components/navigation';
-@import 'components/hero';
-@import 'components/products';
-@import 'components/characteristics';
-@import 'components/modal';
-@import 'components/callback';
-@import 'components/acc';
-@import 'components/overlay';
-@import 'components/footer';
+@import "components/header";
+@import "components/burger";
+@import "components/navigation";
+@import "components/hero";
+@import "components/products";
+@import "components/characteristics";
+@import "components/modal";
+@import "components/callback";
+@import "components/acc";
+@import "components/overlay";
+@import "components/footer";

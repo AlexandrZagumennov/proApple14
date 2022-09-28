@@ -15,7 +15,6 @@ export const accController = ({accList, accItem, accTitle, accDescription}) => {
     dropDown.style.height = dropDown.scrollHeight + 'px';
     button.classList.add('active');
     dropDown.classList.add('active');
-    console.log(dropDown)
   };
 
   const close = (button, dropDown) => {

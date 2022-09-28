@@ -11,7 +11,7 @@
 	}
 
 	&__content {
-		animation: zoomIn 1s;
+		//animation: zoomIn 1s;
 		@include mobile {
 			display: flex;
 			flex-direction: column;

@@ -7,6 +7,7 @@ import { accController } from './functions/acc.js';
 import { magicLineController } from './functions/magicLine.js';
 import { smothScroll } from './functions/smoothScroll.js';
 import { backToTopController } from './functions/backToTop.js';
+import AOS from 'aos';
 
 burger();
 sliders();
@@ -58,3 +59,6 @@ smothScroll({
 backToTopController({
   goTopBtnTrigger: 'back-to-top',
 });
+
+// Библиотека AOS
+AOS.init();

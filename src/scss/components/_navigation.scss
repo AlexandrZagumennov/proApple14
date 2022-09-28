@@ -57,6 +57,10 @@
 		&_hover {
 			background-color: $color-blue;
 		}
+
+		@include small-tablet {
+			display: none;
+		}
 	}
 
   @include small-tablet {
