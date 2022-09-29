@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "graph-tabs": "^1.0.2"
+    "graph-tabs": "^1.0.2",
+    "inputmask": "^5.0.7"
   }
 }
